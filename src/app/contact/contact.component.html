@@ -1,0 +1,42 @@
+<!-- 
+<div (click)="onBackClick()" class="back-icon">
+    <app-back-icon> </app-back-icon>
+</div> -->
+  
+  <div class="root">
+    <div>
+      <h1 class="page-header">CONTACT & PROFILES</h1>
+      
+    </div>
+    
+    <div class="container">
+      <div class="part part1">
+        <div class="section lg-section">
+            <a *ngFor="let profileLinks of contactProfile.profile" [href]="profileLinks.url" target="_blank"  class="img icon">
+              <img [title]="profileLinks.name" [src]="profileLinks.iconUrl" [alt]="profileLinks.name">
+            </a>
+            <a *ngFor = "let val of contactProfile.iconUrl" class="img icon">
+            <img [src] = "val">
+            </a>
+        </div>
+        <div class="section sm-section">
+          <a [href]="email.url" target="_blank" class="img icon">
+            <img [title]="email.name" [src]="email.iconUrl" [alt]="email.name">
+          </a>
+        </div>
+      </div>
+      <div class="part part2">
+        <div class="section sm-section">
+          <a class="img icon" [href]="whatsapp.url" target="_top">
+            <img [title]="whatsapp.name" [src]="whatsapp.iconUrl" [alt]="whatsapp.name">
+          </a>
+        </div>
+        <div class="section lg-section">
+          <a *ngFor="let workProfile of contactProfile.work" class="img iconLong" [href]="workProfile.url" target="_blank">
+            <img [title]="workProfile.name" [src]="workProfile.iconUrl" [alt]="workProfile.name">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
