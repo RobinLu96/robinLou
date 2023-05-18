@@ -24,22 +24,22 @@ export class ContactComponent {
        {
          name: 'Facebook',
          url: 'https://www.facebook.com/robinlu.lulu/',
-         iconUrl: './assets/icon/facebook.svg'
+         iconUrl: './assets/icon/contact/facebook.svg'
        },
        {
          name: 'Twitter',
          url: 'https://twitter.com/robinlou/',
-         iconUrl: '../../assets/icon/twitter.svg'
+         iconUrl: '../../assets/icon/contact/twitter.svg'
        },
        {
          name: 'Instagram',
          url: 'https://www.instagram.com/robinlou_',
-         iconUrl: '../../assets/icon/instagram.svg'
+         iconUrl: '../../assets/icon/contact/instagram.svg'
        },
        {
          name: 'LinkedIn',
          url: 'https://www.linkedin.com/in/robin-lou-50252a102',
-         iconUrl: './assets/icon/linkedin.svg'
+         iconUrl: './assets/icon/contact/linkedin.svg'
        }
      ],
      //Robin's work, including Github, Leetcode and Stackoverflow
@@ -47,17 +47,17 @@ export class ContactComponent {
        {
          name: 'GitHub',
          url: 'https://github.com/RobinLu96',
-         iconUrl: './assets/icon/github.svg'
+         iconUrl: './assets/icon/contact/github.svg'
        },
        {
          name: 'Hackerrank',
          url: 'https://leetcode.com/RobinLou96',
-         iconUrl: './assets/icon/leetcode.svg'
+         iconUrl: './assets/icon/contact/leetcode.svg'
        },
        {
          name: 'Stackoverflow',
          url: 'https://stackoverflow.com/story/robinlou96',
-         iconUrl: './assets/icon/stackoverflow.svg'
+         iconUrl: './assets/icon/contact/stackoverflow.svg'
        },
      ]
    };
@@ -65,13 +65,13 @@ export class ContactComponent {
     this.email = {
      name: 'Email',
      url: 'mailto:x89lu@uwaterloo.ca',
-     iconUrl: './assets/icon/email.svg'
+     iconUrl: './assets/icon/contact/email.svg'
    };
  
     this.whatsapp = {
      name: 'whatsapp',
      url: 'tel: 519-722-8069',
-     iconUrl: './assets/icon/whatsapp.svg'
+     iconUrl: './assets/icon/contact/whatsapp.svg'
    };
 
    }
