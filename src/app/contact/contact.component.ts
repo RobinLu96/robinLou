@@ -29,12 +29,12 @@ export class ContactComponent {
        {
          name: 'Twitter',
          url: 'https://twitter.com/robinlou/',
-         iconUrl: '../../assets/icon/contact/twitter.svg'
+         iconUrl: './assets/icon/contact/twitter.svg'
        },
        {
          name: 'Instagram',
          url: 'https://www.instagram.com/robinlou_',
-         iconUrl: '../../assets/icon/contact/instagram.svg'
+         iconUrl: './assets/icon/contact/instagram.svg'
        },
        {
          name: 'LinkedIn',
