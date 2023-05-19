@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { RobinCollectionComponent } from './robin-collection/robin-collection.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,7 @@ const routes: Routes = [
     data: {animation: 'landing-page'}
   },
   {path:'contact',component:ContactComponent},
+  {path:'collection', component:RobinCollectionComponent},
 ];
 
 @NgModule({

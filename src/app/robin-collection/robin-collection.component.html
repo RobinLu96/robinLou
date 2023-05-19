@@ -1,0 +1,67 @@
+<!--Back paging-->
+<span class="overlay"></span>
+<div class="portfolio-container">
+<div class="portfolio-header" #portfolioHeader>
+<!--Dynamic Typing-->
+</div>
+</div>
+<div class="container">
+
+    <div class="side1">
+        <div class="skill-container">
+          <h1 class="skill-header">
+            Top 10 Luka Doncic Collection
+          </h1>
+          <div *ngFor="let luka of doncic">
+            <!-- <h4 class="skill-type">{{doncic.type}}</h4>
+            <h4 class="skill-names">{{skill.names.join(', ')}}</h4> -->
+            <h4 class = "skill-type">{{luka.collection}}</h4>
+            <div class="collection-image"><img src = {{luka.image}}></div>
+            <h4 class = "skill-names">{{luka.description}}</h4>
+            <h4 class = "collection-price">Estimate Price: {{luka.value}}</h4>
+           
+          </div>
+        </div>
+    </div>
+
+  <div class="side2">
+    <div class="skill-container">
+      <h1 class="skill-header-mid">
+        Top 10 Kylian Mbappé Collection
+      </h1>
+      <div *ngFor="let kylian of mbappe">
+        <!-- <h4 class="skill-type">{{doncic.type}}</h4>
+        <h4 class="skill-names">{{skill.names.join(', ')}}</h4> -->
+        <h4 class = "skill-type-mid">{{kylian.collection}}</h4>
+        <div class="collection-image"><img src = {{kylian.image}}></div>
+        <h4 class = "skill-names">{{kylian.description}}</h4>
+        <h4 class = "collection-price-mid">Estimate Price: {{kylian.value}}</h4>
+        
+      </div>
+      <!-- <div *ngFor="let skill of skills">
+        <h4 class="skill-type">{{skill.type}}</h4>
+        <h4 class="skill-names">{{skill.names.join(', ')}}</h4>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="side3">
+    <div class="skill-container">
+        <h1 class="skill-header">
+          Top 10 Other Player's Collection 
+        </h1>
+        <!-- <div *ngFor="let interest of interest">
+          <h4 class="skill-type">{{interest.names}}</h4>
+          <h4 class="skill-names">{{interest.description}}</h4>
+        </div> -->
+        <div *ngFor="let star of otherStar">
+            <!-- <h4 class="skill-type">{{doncic.type}}</h4>
+            <h4 class="skill-names">{{skill.names.join(', ')}}</h4> -->
+            <h4 class = "skill-type">{{star.collection}}</h4>
+            <div class="collection-image"><img src = {{star.image}}></div>
+            <h4 class = "skill-names">{{star.description}}</h4>
+            <h4 class = "collection-price">Estimate Price: {{star.value}}</h4>
+          </div>
+      </div>
+  </div>
+</div>
