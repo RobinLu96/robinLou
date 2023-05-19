@@ -11,20 +11,20 @@ export const DONCIC_DATA: robinCollection[] = [
         collection: '2018 Luka Doncic Rookie Game-Worn Dallas Mavericks Jersey VS Utah Jazz (Sold)🎽',
         description: 'One of the most expensive Luka Doncic jersey sold on auction',
         value: '85,000',
-        image: "../../assets/icon/collection/Doncic/luka2.jpg"
+        image: "./assets/icon/collection/Doncic/luka2.jpg"
     },
     {
         collection: '2018-19 Luka Doncic Rookie Practice-Worn Kobe 4 Sneakers VS Indiana Pacers👟',
         description: 'Luka Doncic first time to wear Kobe IV in NBA games! The most cool "Spiderman" colorway',
         value: '17,500',
-        image: "../../assets/icon/collection/Doncic/luka3.jpg"
+        image: "./assets/icon/collection/Doncic/luka3.jpg"
     },
 
     {
         collection: '2018 Panini National Treasure Rookie Patch Auto #127 /99 x 3, 2x BGS 9.5, 1x BGS 9 (Sold 1 of 3)🎴',
         description: 'The most iconic Luka Doncic Rookie Card, one of the biggest sport card',
         value: '125,000 - 300,000',
-        image: "../../assets/icon/collection/Doncic/luka4.jpg"
+        image: "./assets/icon/collection/Doncic/luka4.jpg"
     },
     {
         collection: '2018 Luka Doncic Flawless Rookie Patch Auto Horizontal 1/1🎴',
