@@ -30,37 +30,37 @@ export const DONCIC_DATA: robinCollection[] = [
         collection: '2018 Luka Doncic Flawless Rookie Patch Auto Horizontal 1/1🎴',
         description: 'Best of the best! The true GEM of Luka Doncic, might be the best Luka card besides the Luka 1/1 Logoman',
         value: '750,000',
-        image: "../../assets/icon/collection/Doncic/luka5.jpg"
+        image: "./assets/icon/collection/Doncic/luka5.jpg"
     },
     {
         collection: '2019 Luka Doncic Game-Worn & Signed Shoes VS Houston Rockets👟',
         description: 'Luka Doncic first 40 points+ Away game!',
         value: '35,000',
-        image: "../../assets/icon/collection/Doncic/luka6.jpg"
+        image: "./assets/icon/collection/Doncic/luka6.jpg"
     },
     {
         collection: '2019 Luka Doncic "Canada Game" Game-Worn jersey vs Clippers & Pistons🎽',
         description: 'Luka Doncic first time NBA Canada game in Vancover, another Canada regular season shirt was sold by me for 35k',
         value: '30,000',
-        image: "../../assets/icon/collection/Doncic/luka7.jpg"
+        image: "./assets/icon/collection/Doncic/luka7.jpg"
     },
     {
         collection: '2019-20 Luka Doncic Jordan 35 Practice-Worn triple signed Wear Test Sample👟', 
         description: 'Luka Doncic first Jordan Brand shoes!',
-        image: "../../assets/icon/collection/Doncic/luka8.jpg",
+        image: "./assets/icon/collection/Doncic/luka8.jpg",
         value: '20,000'
     },
     {
         collection: '2019-20 Luka Doncic Game-Worn & Signed Kobe IV Sample - Tan Grey Wizenard shoes👟',
         description: 'The best looking shoes Luka Doncic ever worn!',
         value: '20,000',
-        image: "../../assets/icon/collection/Doncic/luka9.jpg"
+        image: "./assets/icon/collection/Doncic/luka9.jpg"
     },
     {
         collection: '2019-20 Luka Doncic Game-Worn & Signed PG3 shoes',
         description: 'The first pair of Luka Doncic Game Worn Shoes he gaved me in person💖',
         value: '10,000',
-        image: "../../assets/icon/collection/Doncic/luka10.jpg"
+        image: "./assets/icon/collection/Doncic/luka10.jpg"
     },
     
 
