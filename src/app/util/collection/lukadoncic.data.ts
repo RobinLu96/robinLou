@@ -5,7 +5,7 @@ export const DONCIC_DATA: robinCollection[] = [
       collection: '2018 Luka Doncic Game-Worn & Signed Jersey VS Cleveland Cavs🎽',
       description: 'Luka Career first 30 points+ Double-double game! One of the best Luka Doncic Rookie Game-Worn Jersey',
       value: '100,000',
-      image: "../../assets/icon/collection/Doncic/luka1.jpg"
+      image: "./assets/icon/collection/Doncic/luka1.jpg"
     },
     {
         collection: '2018 Luka Doncic Rookie Game-Worn Dallas Mavericks Jersey VS Utah Jazz (Sold)🎽',
