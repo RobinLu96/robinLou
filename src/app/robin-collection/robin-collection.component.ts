@@ -15,12 +15,14 @@ export class RobinCollectionComponent implements OnInit {
   doncic: robinCollection[];
   mbappe: robinCollection[];
   otherStar: robinCollection[];
+  url: string;
   animatedTypingText = '👉🔥 Check the Game-Worn jerseys, shoes & Trading cards owns or sold by Robin!! 🥇Sport Memorabilia Collection in Canada!🔥👈';
 
   dpLogoStyle = {
     height: '12rem',
     width: '12rem',
-    borderWidth: '3px'
+    borderWidth: '3px',
+    url: './assets/icon/logo/logo.jpg'
   };
   
 

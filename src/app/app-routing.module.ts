@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { RobinCollectionComponent } from './robin-collection/robin-collection.component';
+import { IntroSkillInterestComponent } from './intro-skill-interest/intro-skill-interest.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,7 @@ const routes: Routes = [
   },
   {path:'contact',component:ContactComponent},
   {path:'collection', component:RobinCollectionComponent},
+  {path:'skills&interest', component: IntroSkillInterestComponent}
 ];
 
 @NgModule({

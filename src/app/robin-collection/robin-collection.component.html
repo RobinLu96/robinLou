@@ -1,12 +1,28 @@
 <!--Back paging-->
+<div class = "back-icon" (click) = "onBackClick()">
+  <app-back-icon></app-back-icon>
+</div>
+
 <span class="overlay"></span>
 <div class="portfolio-container">
 <div class="portfolio-header" #portfolioHeader>
+<!--Robin's Icon-->
+<app-robin-icon
+[height]="dpLogoStyle.height"
+[width]="dpLogoStyle.width"
+[borderWidth]="dpLogoStyle.borderWidth"
+[url]="dpLogoStyle.url">
+</app-robin-icon>
 <!--Dynamic Typing-->
+<app-dynamic-typing
+[time]="2500"
+[delay]="1000"
+[text]="animatedTypingText">
+</app-dynamic-typing>
 </div>
 </div>
 <div class="container">
-
+  <!--Left Luka Collection-->
     <div class="side1">
         <div class="skill-container">
           <h1 class="skill-header">
@@ -23,40 +39,29 @@
           </div>
         </div>
     </div>
-
+  <!--Mid Mbappe Collection-->
   <div class="side2">
     <div class="skill-container">
       <h1 class="skill-header-mid">
         Top 10 Kylian Mbappé Collection
       </h1>
       <div *ngFor="let kylian of mbappe">
-        <!-- <h4 class="skill-type">{{doncic.type}}</h4>
-        <h4 class="skill-names">{{skill.names.join(', ')}}</h4> -->
         <h4 class = "skill-type-mid">{{kylian.collection}}</h4>
         <div class="collection-image"><img src = {{kylian.image}}></div>
         <h4 class = "skill-names">{{kylian.description}}</h4>
         <h4 class = "collection-price-mid">Estimate Price: {{kylian.value}}</h4>
         
       </div>
-      <!-- <div *ngFor="let skill of skills">
-        <h4 class="skill-type">{{skill.type}}</h4>
-        <h4 class="skill-names">{{skill.names.join(', ')}}</h4>
-      </div> -->
     </div>
   </div>
 
+  <!--Right Other Collection-->
   <div class="side3">
     <div class="skill-container">
         <h1 class="skill-header">
           Top 10 Other Player's Collection 
         </h1>
-        <!-- <div *ngFor="let interest of interest">
-          <h4 class="skill-type">{{interest.names}}</h4>
-          <h4 class="skill-names">{{interest.description}}</h4>
-        </div> -->
         <div *ngFor="let star of otherStar">
-            <!-- <h4 class="skill-type">{{doncic.type}}</h4>
-            <h4 class="skill-names">{{skill.names.join(', ')}}</h4> -->
             <h4 class = "skill-type">{{star.collection}}</h4>
             <div class="collection-image"><img src = {{star.image}}></div>
             <h4 class = "skill-names">{{star.description}}</h4>

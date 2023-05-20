@@ -5,17 +5,18 @@ $sm_break_point:560px;
   //color:#f9136b;
   display: flex;
   flex-direction: column;
-  height: 140vh;
+  height: 160vh;
   width: 100vw;
 }
 
+//Circle two color
 .overlay {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   overflow: hidden;
   z-index: -1;
   display: block;
-  background: #04ffff;
+  background: $color3;
   position: fixed;
   right: 0;
   top: 0;
@@ -27,6 +28,7 @@ $sm_break_point:560px;
   }
 
 .dp-logo {
+  margin-top: 2rem;
   font-size: 2rem;
   animation: 1s ease-in-out 0.2s both fadeIn;
 }
@@ -129,7 +131,7 @@ $sm_break_point:560px;
     position: absolute;
     display: inline-block;
     height: 2px;
-    background-color: aqua;
+    background-color: $color3;
     margin: 2px 0;
     width: 100%;
     margin: auto;
@@ -142,7 +144,7 @@ $sm_break_point:560px;
     display: inline-block;
     content: '';
     height: 2px;
-    background-color: aqua;
+    background-color: $color3;
     margin: 2px 0;
     width: 100%;
     margin: auto;
@@ -156,7 +158,7 @@ $sm_break_point:560px;
   line-height: 2;
   font-size: 1.4rem;
   padding: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   background-color: rgb(182, 253, 253);
   color: #FF6889;
   border: none;
@@ -176,11 +178,11 @@ $sm_break_point:560px;
   &:hover {
     box-shadow: 7px 5px 8px 0 #FF6889;
     background-color: #FF6889;
-    color:aqua;
-    animation-play-state: paused;
+    color:$color3;
+    animation-play-state: paused; 
     &::after {
       transform: translateX(0.2rem);
-      color:aqua;
+      color:$color3;
       opacity: 1;
     }
     span {

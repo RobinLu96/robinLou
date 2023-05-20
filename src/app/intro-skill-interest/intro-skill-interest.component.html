@@ -1,0 +1,45 @@
+<div class="back-icon" (click)="onBackClick()">
+    <app-back-icon></app-back-icon>
+</div>
+<span class="overlay"></span>
+<div class="container">
+
+
+  <div class="side2">
+    <div class="skill-container">
+      <h1 class="skill-header">
+        Skills
+      </h1>
+      <div *ngFor="let skill of skills">
+        <h4 class="skill-type">{{skill.type}}</h4>
+        <h4 class="skill-names">{{skill.names.join(', ')}}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="side1">
+    <h1 class="skill-header">About Robin</h1>
+    <app-robin-icon height="13rem" width="13rem" class="dp-logo" url="./assets/icon/logo/logo.jpg"></app-robin-icon>
+    <div class="text-container" style="font-weight: bold">
+      <br> 
+      <!-- <h4 class="about"> -->
+        This is Robin Lu, who started programming with C# and building 3D module with Maya since 2009, winning third place for 2012, 
+        and championship for 2013 RoboCup Junior (China) Cospace Dance. Awarded 2013 RoboCup Junior(World, Eindhoven) best design award.
+        Starting in 2015, I pursued a degree in Computer Engineering at the University of Waterloo, completing six co-op work terms and earning Dean's Honours List recognition in their fourth year. 
+        Since their second work term, Robin has been working as a Full-Stack Developer, tackling industry problems by designing, implementing, and refining websites and web applications using various Front-End frameworks like Angular and React, as well as Back-End frameworks such as Spring Boot, ASP.NET, and Ruby on Rails.
+      <!-- </h4> -->
+        <br><br>
+        In addition to working as a Full-Stack Developer, I am an avid sports fan and collector of memorabilia. I am a supporter of the Dallas Mavericks and Paris Saint-Germain. Besides that, I enjoy playing Pokemon and going hiking.
+    </div>
+  </div> 
+  <div class="side3">
+    <div class="skill-container">
+        <h1 class="skill-header">
+          Interest
+        </h1>
+        <div *ngFor="let interest of interest">
+          <h4 class="skill-type">{{interest.names}}</h4>
+          <h4 class="skill-names">{{interest.description}}</h4>
+        </div>
+      </div>
+  </div>
+</div>

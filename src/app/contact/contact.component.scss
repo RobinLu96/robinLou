@@ -34,7 +34,7 @@ a {
   margin: 2rem 0;
   user-select: none;
   font-family: 'Copperplate Gothic', serif;
-  color:aqua; // font-weight: normal;
+  color:$color3; // font-weight: normal;
   &:after {
     content: '';
     position: absolute;
@@ -113,7 +113,7 @@ a {
 .part {
   display: flex;
   width: 100%;
-  background-color: aqua;
+  background-color: $color3;
 }
 
 .section {
@@ -128,7 +128,7 @@ a {
 
 
   &.sm-section {
-    background-color:aqua;
+    background-color: $color3;
     width: 35%;
     display: flex;
     justify-content: center;
