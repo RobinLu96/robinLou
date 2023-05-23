@@ -1,1 +1,32 @@
-<p>experience works!</p>
+<div class="experience-bg">
+    <div class="experience-container">
+      <div class="experience-header" #experienceHeader>
+        <app-robin-icon
+        [height]="dpLogoStyle.height"
+        [width]="dpLogoStyle.width"
+        [borderWidth]="dpLogoStyle.borderWidth"
+        [url]="dpLogoStyle.url"
+        >
+      </app-robin-icon>
+      <app-dynamic-typing
+      [time]="2500"
+      [delay]="1000"
+      [text]="animatedTypingText">
+      </app-dynamic-typing>
+      </div>
+      <div class="experience-area" #experienceArea>
+        <div class="back-icon" (click)="onBackClick()">
+          <app-back-icon></app-back-icon>
+        </div>
+        <div class="experience-selection" #experienceSelectionArea [ngClass]="{'experience-selection__fixed': setFixedPostion }">
+          <h1>Robin's Experience</h1>
+        </div>
+        <h2>Work Experience</h2>
+        <hr>
+        <!-- <app-jobs></app-jobs> -->
+        <h2>Life Experience</h2>
+        <hr>
+        <!-- <app-lives></app-lives> -->
+      </div>
+    </div>
+</div>

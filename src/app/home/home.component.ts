@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
         setInterval(() => {
       this.startTadaAnimation = !this.startTadaAnimation;
-    }, 3000);
+    }, 4000);
   }
 
   onExploreMeClick() {

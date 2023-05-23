@@ -1,6 +1,6 @@
-import { ITag } from './../util/tag-robin';
+import { ITag } from '../util/tag/tag-robin';
 import { Injectable, EventEmitter } from '@angular/core';
-import { tagData } from '../util/tag-data';
+import { tagData } from '../util/tag/tag-data';
 
 @Injectable()
 export class TagsService {

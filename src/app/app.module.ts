@@ -13,6 +13,8 @@ import { IntroSkillInterestComponent } from './intro-skill-interest/intro-skill-
 import { BackIconComponent } from './ui/back-icon/back-icon.component';
 import { BackIndexComponent } from './ui/back-index/back-index.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { BackIndexComponent } from './ui/back-index/back-index.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
