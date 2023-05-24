@@ -14,6 +14,18 @@ import { BackIconComponent } from './ui/back-icon/back-icon.component';
 import { BackIndexComponent } from './ui/back-index/back-index.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { JobsComponent } from './jobs/jobs.component';
+import { LivesComponent } from './lives/lives.component';
+import { JobCardComponent } from './job-card/job-card.component';
+import { NoEmojiPipe } from './pipes/no-emoji.pipe';
+import { MaxLenPipe } from './pipes/max-len.pipe';
+import { JobDetailsComponent } from './job-details/job-details.component';
+
+import { TagsService } from './service/tags.service';
+import { JobsDataService } from './service/jobs-data.service';
+import { LivesDataService } from './service/lives-data.service';
+import { LifeCardComponent } from './life-card/life-card.component';
+import { LifeDetailsComponent } from './life-details/life-details.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +38,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RobinIconComponent,
     IntroSkillInterestComponent,
     BackIconComponent,
-    BackIndexComponent
+    BackIndexComponent,
+    JobsComponent,
+    LivesComponent,
+    JobCardComponent,
+    NoEmojiPipe,
+    MaxLenPipe,
+    JobDetailsComponent,
+    LifeCardComponent,
+    LifeDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [TagsService, LivesDataService, JobsDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

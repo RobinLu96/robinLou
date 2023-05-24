@@ -25,6 +25,12 @@ a {
   }
 }
 
+.dynamic{
+  color: $color3;
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+
 .page-header {
   part: $off-white;
   position: relative;
@@ -33,8 +39,10 @@ a {
   word-spacing: 1.5px;
   margin: 2rem 0;
   user-select: none;
-  font-family: 'Copperplate Gothic', serif;
-  color:$color3; // font-weight: normal;
+  // font-family: 'Copperplate Gothic', serif;
+  font-family: 'Century Gothic', CenturyGothic;
+  // font-weight: bold;
+  color: $color3; // font-weight: normal;
   &:after {
     content: '';
     position: absolute;
@@ -43,7 +51,7 @@ a {
     height: 2px;
     top: 100%;
     left: 0;
-    background: $off-white;
+    background: $color3;
   }
 }
 

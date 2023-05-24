@@ -1,0 +1,18 @@
+<div class="back-icon" (click)="onBackClick()">
+    <app-back-icon></app-back-icon>
+  </div>
+  
+  <div class="container">
+  <div class="side1">
+    <h1 class="skill-header">{{detailedLife.experience}}</h1>
+    <div class="text-container" style = "color : white">
+  <!-- <h2>动态传递的数据： {{detailedJob.experience}}</h2> -->
+    <h2 style="font-weight: bold;">{{detailedLife.location}}</h2>
+    <h2>{{detailedLife.date}}</h2>
+    <h2>{{detailedLife.description}}</h2>
+    <a class="profile-logo" *ngFor="let image of detailedLife.image">
+    <img src='{{"../../assets/icon/life/" + image + ".jpg"}}'>
+    </a>
+    </div>
+    </div>
+  </div> 

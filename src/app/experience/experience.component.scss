@@ -1,0 +1,110 @@
+@import '../var';
+
+h2{
+    font-family: 'Century Gothic', CenturyGothic;
+    margin-top: 3rem;
+}
+
+.experience-bg {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  background-color: $color3;
+  overflow: hidden;
+  display: flex;
+
+  &::after {
+    content: '';
+    position: fixed;
+    display: block;
+    height: 90vh;
+    // min-height: 500px;
+    width: 120vw;
+    min-width: 500px;
+    overflow: hidden;
+    background-color: #FF6889;
+    transform: rotateZ(65deg) scale(1.5);
+    top: -50vh;
+    left: -25vw;
+    @media only screen and (max-width: 1000px){
+        height: 60vh;
+        width: 160vw;
+        top: 30vh;
+      }
+      @media only screen and (max-width:600px){
+        width: 100vh;
+        height: 150vw;
+        // transform: rotateZ(0deg) scale(1.5);
+        transform: scale(2) translate(-10vw, 0vh);
+        clip-path: ellipse(45vw 65vh at 35% 35%);
+      }
+    }
+
+    
+
+
+}
+
+.experience-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  padding: 3.5rem;
+  flex-direction: column;
+  color: $color3;
+
+  .experience-header {
+    display: flex;
+    justify-content: stretch;
+    margin: auto;
+    align-items: center;
+    font-size: 1.8rem;
+    user-select: none;
+
+    & > * {
+      display: inline-block;
+      padding: 1rem 2rem;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+  }
+
+  .experience-area {
+    margin: 0.4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    position: relative;
+
+    .experience-selection {
+      // background-color: $color2;
+      user-select: none;
+
+      &.experience-selection__fixed {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: $color2;
+        width: 100%;
+        box-shadow: 0px 8px 20px rgba($color: #000, $alpha: 0.4);
+        // transition: all 0.3s ease-in-out;
+      }
+
+      & > h1 {
+        // font-family: 'Cormorant Garamond', serif;
+        font-family: 'Century Gothic', CenturyGothic;
+        font-weight: normal;
+        font-size: 3.2rem;
+        letter-spacing: 1px;
+        margin: 1rem auto;
+        text-align: center;
+      }
+    }
+  }
+}

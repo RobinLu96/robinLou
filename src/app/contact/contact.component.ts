@@ -13,6 +13,7 @@ export class ContactComponent {
   email: any;
   profile: any;
   whatsapp: any;
+  animatedTypingText = 'Feel free to 📧 or📲 Robin, and plz follow my social media account😄';
 
   constructor(private router: Router) {
 

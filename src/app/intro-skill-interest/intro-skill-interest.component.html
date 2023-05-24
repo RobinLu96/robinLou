@@ -18,10 +18,11 @@
   </div>
   <div class="side1">
     <h1 class="skill-header">About Robin</h1>
-    <app-robin-icon height="13rem" width="13rem" class="dp-logo" url="./assets/icon/logo/logo.jpg"></app-robin-icon>
+    <app-robin-icon height="13rem" width="13rem" class="dp-logo" url="./assets/icon/logo/logo4.jpg"></app-robin-icon>
     <div class="text-container" style="font-weight: bold">
       <br> 
       <!-- <h4 class="about"> -->
+        <h4 class = "about-robin">
         This is Robin Lu, who started programming with C# and building 3D module with Maya since 2009, winning third place for 2012, 
         and championship for 2013 RoboCup Junior (China) Cospace Dance. Awarded 2013 RoboCup Junior(World, Eindhoven) best design award.
         Starting in 2015, I pursued a degree in Computer Engineering at the University of Waterloo, completing six co-op work terms and earning Dean's Honours List recognition in their fourth year. 
@@ -29,7 +30,8 @@
       <!-- </h4> -->
         <br><br>
         In addition to working as a Full-Stack Developer, I am an avid sports fan and collector of memorabilia. I am a supporter of the Dallas Mavericks and Paris Saint-Germain. Besides that, I enjoy playing Pokemon and going hiking.
-    </div>
+        </h4>
+      </div>
   </div> 
   <div class="side3">
     <div class="skill-container">
@@ -37,8 +39,8 @@
           Interest
         </h1>
         <div *ngFor="let interest of interest">
-          <h4 class="skill-type">{{interest.names}}</h4>
-          <h4 class="skill-names">{{interest.description}}</h4>
+          <h2 class="skill-type">{{interest.names}}</h2>
+          <h4 class="interest-names">{{interest.description}}</h4>
         </div>
       </div>
   </div>

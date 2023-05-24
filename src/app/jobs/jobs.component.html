@@ -1,0 +1,5 @@
+<div [@slideIn]="jobs?.length" (@slideIn.done)="renderJobs()" class="project-container">
+    <li *ngFor="let job of jobs" class="project-card">
+      <app-job-card [routerLink]="['/job-details', job.id]" [job] = "job" (select)="onProjectCardClick($event)" ></app-job-card>
+    </li>
+  </div>

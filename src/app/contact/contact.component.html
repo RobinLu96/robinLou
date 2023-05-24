@@ -4,11 +4,15 @@
   
   <div class="root">
     <div>
-      <h1 class="page-header">CONTACT & PROFILES</h1>
-      
+      <h1 class="page-header">Contact & Profiles</h1>
     </div>
-    
+
     <div class="container">
+      <app-dynamic-typing class="dynamic"
+      [time]="1500"
+      [delay]="1000"
+      [text]="animatedTypingText">
+      </app-dynamic-typing>
       <div class="part part1">
         <div class="section lg-section">
             <a *ngFor="let profileLinks of contactProfile.profile" [href]="profileLinks.url" target="_blank"  class="img icon">

@@ -17,6 +17,10 @@ $row-coloum-brk-point: 'max-width: 1040px';
   }
 }
 
+.dynamic{
+  color:  $color3;
+}
+
 .container {
     font-size: 1.4rem;
     width: 100vw;
@@ -119,10 +123,11 @@ $row-coloum-brk-point: 'max-width: 1040px';
     margin: 2rem 0;
     margin-bottom: 1.8rem;
     position: relative;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-bottom: 0.2rem;
     font-size: 3.2rem;
-    font-family: 'Cormorant Garamond', serif;
+    // font-family: 'Cormorant Garamond', serif;
+    font-family: 'Century Gothic', CenturyGothic;
     justify-content: flex-start;
     &:after {
       content: '';
@@ -143,10 +148,11 @@ $row-coloum-brk-point: 'max-width: 1040px';
     color: $color1;
     margin-bottom: 1.8rem;
     position: relative;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-bottom: 0.2rem;
     font-size: 3.2rem;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Century Gothic', CenturyGothic;
+    // font-family: 'Cormorant Garamond', serif;
     justify-content: flex-start;
     &:after {
       

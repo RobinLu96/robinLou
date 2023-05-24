@@ -22,7 +22,7 @@ export class RobinCollectionComponent implements OnInit {
     height: '12rem',
     width: '12rem',
     borderWidth: '3px',
-    url: './assets/icon/logo/logo.jpg'
+    url: './assets/icon/logo/logo2.jpg'
   };
   
 

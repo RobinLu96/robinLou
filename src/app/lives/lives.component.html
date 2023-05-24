@@ -1,0 +1,5 @@
+<div [@slideIn]="lives?.length" (@slideIn.done)="renderLives()" class="project-container">
+    <li *ngFor="let life of lives" class="project-card">
+      <app-life-card [routerLink]="['/life-details', life.id]" [life] = "life" (select)="onLiveCardClick($event)" ></app-life-card>
+    </li>
+</div>

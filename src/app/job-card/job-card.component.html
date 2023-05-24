@@ -1,0 +1,23 @@
+<div class="card-outer" (click)="onCardClick(job)">
+    <div class="card card__front" [ngClass]="{'card__featured':job.isFeatured}">
+      <div class="card-container">
+       <h4 class="card-header">{{job.experience | noEmoji}}</h4>
+        <h4 class="card-title">{{job.role}}</h4>
+        <p class="card-short-details">
+          {{job.description}}
+        </p>
+      </div>
+    </div>
+    <div class="card card__back" [ngClass]="{'card__featured_back':job.isFeatured}">
+      <div class="card-container">
+        <div class="card-short-details"><span>Tech Stack: </span>
+          <div class="tech-stack-details">
+            <p>{{job.techStack.join(' , ') | maxLen:100:true}}</p>
+          </div>
+          <button class="full-width-btn">More Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,31 @@
+<!-- <p>job-details works!</p> -->
+<div class="back-icon" (click)="onBackClick()">
+    <app-back-icon></app-back-icon>
+  </div>
+  
+  <div class="container">
+  <div class="side1">
+    <h1 class="skill-header">{{detailedJob.experience}}</h1>
+    <!-- <app-robin-icon height="13rem" width="13rem" class="dp-logo"></app-robin-icon> -->
+    <div class="profile-logo">
+      <img src='{{"../../assets/icon/company/" + detailedJob.jobLink+ ".png"}}'>
+    </div>
+    <div class="text-container" style = "color : white">
+  <!-- <h2>动态传递的数据： {{detailedJob.experience}}</h2> -->
+    <h2 style="font-weight: bold;">{{detailedJob.role}}</h2>
+    <h2>{{detailedJob.date}}</h2>
+    <h2>{{detailedJob.description}}</h2>
+    <h2>{{detailedJob.responsibility}}</h2>
+    <h2>{{detailedJob.evaluation}}</h2>
+    <hr>
+    <h2 style = "font-weight: bold;">Tech Stack:</h2>
+    <h2>{{detailedJob.techStack}}</h2>
+    <hr>
+    <h2 style = "font-weight: bold;">Achievement:</h2>
+    <div *ngFor="let achievement of detailedJob.achievement, let i = index ">
+    <h2> {{i+1}}, {{detailedJob.achievement[i]}}</h2>
+    </div>
+    <!-- <h2>{{detailedJob}}</h2> -->
+    </div>
+    </div>
+  </div> 
