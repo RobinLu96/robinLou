@@ -28,9 +28,9 @@ export class ContactComponent {
          iconUrl: './assets/icon/contact/facebook.svg'
        },
        {
-         name: 'Twitter',
-         url: 'https://twitter.com/robinlou/',
-         iconUrl: './assets/icon/contact/twitter.svg'
+         name: 'Bilibili',
+         url: 'https://space.bilibili.com/603752112',
+         iconUrl: './assets/icon/contact/bilibili.svg'
        },
        {
          name: 'Instagram',

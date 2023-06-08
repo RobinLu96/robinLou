@@ -22,6 +22,7 @@ export class JobDetailsComponent {
 
   ngOnInit(){
     this.jobId = this.dynamicRoute.snapshot.paramMap.get('id');
+    //Filter the wanted job via jobID
     this.detailedJob = this.jobService.getJobs().find(x => x.id == this.jobId);
   }
 

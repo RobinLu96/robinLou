@@ -39,19 +39,6 @@ $min-width: 20rem;
   backface-visibility: hidden;
   user-select: none;
 
-  &.card__front {
-    transform: rotateY(0deg);
-  }
-
-  &.card__back {
-    background: #eee;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: rotateY(180deg);
-  }
-
   &.card__featured {
     background-color: $color3;
     &::before {
@@ -66,15 +53,15 @@ $min-width: 20rem;
       color: $color1;
       
     }
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 3.2rem;
-      height: 3.2rem;
-      transform: rotateZ(45deg) translate(-88%) scale(2);
-    }
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 3.2rem;
+    //   height: 3.2rem;
+    //   transform: rotateZ(45deg) translate(-88%) scale(2);
+    // }
   }
 
   &.card__featured_back {
@@ -113,7 +100,8 @@ $min-width: 20rem;
     height: 100%;
 
     .card-header {
-      font-family: 'Cormorant Garamond', serif;
+      // font-family: 'Cormorant Garamond', serif;
+      font-family: 'Century Gothic', CenturyGothic;
       background-color: rgba($color1, 0.2);
       width: 100%;
       font-size: 2.4rem;
